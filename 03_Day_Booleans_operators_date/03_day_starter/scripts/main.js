@@ -63,3 +63,51 @@ console.log()
 
 const rightNow = new Date()
 console.log(rightNow.getTime())
+
+//Exercise 2
+
+
+let b = prompt('Enter the base')
+let h = prompt('Enter the height')
+let area = 0.5 * b * h
+alert(`The area of the trinagle is ${area}`)
+
+let sideA = prompt('Enter the side length A')
+let sideB = prompt('Enter the side length B')
+let sideC = prompt('Enter the side length C')
+let perimeter = parseInt(sideA) + parseInt(sideB) + parseInt(sideC)
+console.log(perimeter)
+alert(`The perimeter of the triangle is ${perimeter}`)
+
+let length = prompt('What is the length')
+let width = prompt('What is the width')
+area = length * width
+perimeter = 2 * (length * width)
+console.log(`The area is ${area} and the perimeter is ${perimeter}`)
+
+let radius = prompt('Enter the radius')
+let PI = 3.14;
+area = PI * radius * radius
+let circumference = 2 * PI * radius
+console.log(`The area is ${area} and the circurmference is ${circumference}`)
+
+function slope(x1, y1, x2, y2) {
+    return y2 - y1 / x2 - x1
+}
+
+
+console.log(slope(2, 2, 6, 10))
+
+let y = 0
+let x = -3
+console.log(x ** 2 + (6 * x) + 9)
+
+let workHours = prompt('Enter the hours worked')
+let rate = prompt('Enter the rate per hour')
+alert(`Your weekly earning is ${workHours * rate}`)
+
+if (firstName.length > 7) {
+    console.log('Your name is long')
+} else {
+    console.log('Your name is short')
+}
