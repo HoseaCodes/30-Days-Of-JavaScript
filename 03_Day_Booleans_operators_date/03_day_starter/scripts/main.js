@@ -7,7 +7,7 @@ const city = 'Houston';
 const age = 28;
 const isMarried = false;
 const now = new Date();
-const year = now.getFullYear();
+let year = now.getFullYear();
 
 console.log(`Name: ${firstName} ${lastName} Age: ${age} Married: ${isMarried} from ${city}${country} Year: ${year}`)
 
@@ -110,4 +110,48 @@ if (firstName.length > 7) {
     console.log('Your name is long')
 } else {
     console.log('Your name is short')
+}
+
+if (firstName.length > lastName.length) {
+    console.log(`Your first name, ${firstName} is longer than your family name, ${lastName}`)
+} else {
+    console.log(`Your family name, ${lastName} is longer than your first name, ${firstName}`)
+
+}
+let myAge = 28;
+let yourAge = 25;
+
+if (myAge > yourAge) {
+    console.log(`I am ${myAge - yourAge} years older than you`)
+} else {
+    console.log(` You are ${yourAge - myAge} years younger than me`)
+}
+
+let birthYear = prompt('What year were you born?')
+
+if (birthYear <= 1995) {
+    console.log(`You are ${now.getFullYear - birthYear}. You are old enough to drive`)
+} else {
+    console.log(`You are ${now.getFullYear - birthYear}. You will be allowed to drive after ${18 - (now.getFullYear - birthYear)} years.`)
+}
+
+let lifespan = prompt('Enter the number of yours you live:')
+
+console.log(`You lived ${lifespan.getSeconds} seconds`)
+
+year = now.getFullYear();
+let month = now.getMonth();
+date = now.getDate();
+let hours = now.getHours();
+let minutes = now.getMinutes();
+
+console.log(`${year}-${month}-${date} ${hours}:${minutes}`)
+console.log(`${date}-${month}-${year} ${hours}:${minutes}`)
+console.log(`${date}/${month}/${year} ${hours}:${minutes}`)
+
+if (hours.length < 2 && minutes.length < 2) {
+    console.log(`${year}-${month}-${date} 0${hours}:0${minutes}`)
+} else {
+    console.log(`${year}-${month}-${date} ${hours}:${minutes}`)
+
 }
